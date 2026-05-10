@@ -409,6 +409,7 @@ order by
 --- Calculated fraud rate by cohort index
 select
     Cohort_index,
+    cohort_month,
     count(transaction_amount) as Total_transactions,
     sum(fraud_label) as fraud_transactions,
     round(sum(fraud_label)*1.0/ count(transaction_amount)*100)
@@ -420,7 +421,7 @@ join
 on 
      tm.user_id = ci.user_id
 group by
-    ci.Cohort_index;
+    ci.Cohort_index, cohort_month
 ```
 
 
@@ -439,7 +440,7 @@ group by
 | 9            | 32         |
 | 10           | 32         |
 | 11           | 31         |
-
+*I have limited the table to the important values fro this analysis.
 
 #### **User Acquisition Quality Over Time**
 
