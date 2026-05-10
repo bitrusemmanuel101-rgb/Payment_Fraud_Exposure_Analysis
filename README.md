@@ -440,7 +440,7 @@ group by
 | 9            | 32         |
 | 10           | 32         |
 | 11           | 31         |
-*I have limited the table to the important values fro this analysis.
+*I have limited the table to the important values for this analysis.*
 
 #### **User Acquisition Quality Over Time**
 
