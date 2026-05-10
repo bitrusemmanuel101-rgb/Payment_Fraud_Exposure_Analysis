@@ -29,8 +29,11 @@ dup_check as (
     from
          transactions_dataset
 )
+
 -- CREATING CLEAN TRANSACTION_DATASET TABLE
 -- 99996 duplicates
+-- created a temp table called (transactions_data_main), to contain my cleaned data set
+
 select
      *
 into 
@@ -41,17 +44,21 @@ where
     DUP_FLAG =1
 
 SELECT * 
-FROM transactions_dataset_MAIN
+FROM 
+    transactions_dataset_MAIN
 
 
 
--- user_cohort_by_transaction_date
+-- Created a temp table called (user_cohort) to contain my cohort month
 SELECT
     user_id,
     min(date_trunc('month', date)) as Cohort_month
-into user_cohort
-FROM transactions_dataset_main
-GROUP by user_id
+into 
+    user_cohort
+FROM 
+    transactions_dataset_main
+GROUP by 
+    user_id
 
 
 
