@@ -445,8 +445,10 @@ group by
 #### **User Acquisition Quality Over Time**
 
 
-Cohort fraud rates remained consistently high (~30–32%)
-This reinforced the finding that fraud exposure was system-wide rather than segment or cohort-specific.
+Cohort fraud rates remained consistently high (~31–32%), with the last generation showing a reduction in fraud intensity. but overall, the range is same.
+
+
+This reinforced the finding that fraud exposure was system-wide rather than segment or cohort-specific. 
 
 
 Newer cohorts showed lower transaction volume due to shorter lifecycle maturity.
