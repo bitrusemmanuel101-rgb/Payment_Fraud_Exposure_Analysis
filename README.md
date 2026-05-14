@@ -110,7 +110,7 @@ from
 ```
 ---
 ## Answer
-![Gross TPV, Net TPV, Fraud TPV, Fraud rate](Fraud_Detection_SQL\assets\kpi.PNG) 
+![Gross TPV, Net TPV, Fraud TPV, Fraud rate](Fraud_Detection_SQL/assets/kpi.PNG) 
 - Total Payment Value (TPV) of the daaset: $4,970,551
 - Net TPV: $3,368,933
 - Fraud TPV: $1,601,618
@@ -164,7 +164,7 @@ order BY
     Fraud_rate DESC;
 ``` 
 
-![Fraud Rate By Merchant Category](Fraud_Detection_SQL\assets\Merchants.PNG) 
+![Fraud Rate By Merchant Category](Fraud_Detection_SQL/assets/Merchants.PNG) 
 
 *A Funnel Showing The Fraud Percent By Merchants*
 - Electronics → ~32.7% fraud
@@ -208,7 +208,7 @@ order BY
     Fraud_rate DESC
 ```
 
-![Fraud Rates By Geography](Fraud_Detection_SQL\assets\Geography.PNG)
+![Fraud Rates By Geography](Fraud_Detection_SQL/assets/Geography.PNG)
 
 *A Treemap Showing Fraud Rate in Each Location*
 - Tokyo → ~33.0%
@@ -249,7 +249,7 @@ from
 order BY 
     Fraud_rate DESC
 ``` 
-![Fraud Through Authentication Methods](Fraud_Detection_SQL\assets\authentication.PNG)
+![Fraud Through Authentication Methods](Fraud_Detection_SQL/assets/authentication.PNG)
 
 *Bar Chart Showing Fraud Rate By Authentication Methods*
 - Biometric → 32.6%
@@ -304,7 +304,7 @@ order BY
     Fraud_rate DESC; 
 ```
 
-![Fraud Rate by Device Types](Fraud_Detection_SQL\assets\device_type.PNG)
+![Fraud Rate by Device Types](Fraud_Detection_SQL/assets/device_type.PNG)
 
 *Pie Chart Showing Fraud Rate by Devioce Types*
 - Mobile → 32.6% fraud
@@ -342,7 +342,7 @@ order BY
     Fraud_rate DESC;  
 ```
 
-![Fraud Rate by Card Types](Fraud_Detection_SQL\assets\card_type.PNG)
+![Fraud Rate by Card Types](Fraud_Detection_SQL/assets/card_type.PNG)
 
 *Donut Chart SHopwing Fraud Rate By Card Types*
 
@@ -377,7 +377,7 @@ ORDER BY
     fraud_rate DESC
 ```
 
-![Risk Score Vs Fraud rate](Fraud_Detection_SQL\assets\RISK.PNG)
+![Risk Score Vs Fraud rate](Fraud_Detection_SQL/assets/RISK.PNG)
 
 *Risk Detection Engine Properly Detects Activities With High Risks*
 
@@ -445,7 +445,7 @@ on
 group by
     ci.Cohort_index, cohort_month
 ```
-![Fraud Rates Accross Cohort Lifecycle](Fraud_Detection_SQL\assets\cohort.PNG)
+![Fraud Rates Accross Cohort Lifecycle](Fraud_Detection_SQL/assets/cohort.PNG)
 
 
 
