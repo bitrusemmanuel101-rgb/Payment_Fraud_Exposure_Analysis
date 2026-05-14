@@ -1,7 +1,6 @@
  with Fraud_t as(
 
 SELECT
-
    transaction_type,
     sum(transaction_amount) as Gross_TPV,
     sum(case when fraud_label =1 then transaction_amount else 0 end ) as Fraud_TPV,
@@ -15,7 +14,7 @@ FROM
 SELECT 
   *
 from fraud_t
-order BY Fraud_rate DESC
+order BY Fraud_rate DESC;
 
 
 

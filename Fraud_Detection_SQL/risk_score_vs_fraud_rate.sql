@@ -1,5 +1,6 @@
 
 select 
+    
     CASE
         WHEN risk_score >= 0.8 then 'High Risk'
         WHEN risk_score >=0.4 then 'Medium Risk'
@@ -8,6 +9,7 @@ select
     sum(transaction_amount) as fraud_rate
 from 
     transactions_dataset_main
+
 GROUP BY
     risk_band
 ORDER BY

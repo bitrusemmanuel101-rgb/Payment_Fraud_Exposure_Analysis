@@ -39,7 +39,7 @@ join
 on 
      tm.user_id = ci.user_id
 group by
-    ci.Cohort_index, cohort_month
+    ci.Cohort_index, cohort_month;
 
 
 
