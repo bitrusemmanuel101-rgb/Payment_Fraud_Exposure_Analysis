@@ -11,7 +11,7 @@ As transaction volumes scale, leadership needs confidence that reported growth r
 
 This analysis was initiated in response to a set of executive concerns around growth quality and risk exposure across the payment system. The goal was to move beyond surface-level reporting and assess whether growth signals are trustworthy, whether fraud is materially present within operational flows, and how risk is distributed across different user segments and acquisition cohorts.
 
-## The Questions Answered Through This Query Are:
+## The Questions Answered Through This Project Are:
 
 1. Can we trust our growth?
 2. Do we have fraudulent operations? Where? And how heavy are they accross segments?
@@ -22,6 +22,7 @@ This analysis was initiated in response to a set of executive concerns around gr
 - SQL (PostgreSQL)
 - VS Code
 - Git & GitHub
+- Microsoft Power BI
 
 
 # **Data Preparation**
