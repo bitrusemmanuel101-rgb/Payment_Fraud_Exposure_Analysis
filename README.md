@@ -1,4 +1,4 @@
-# **Fraud Detection And Growth Integrity Analysis**
+# **Payment Fraud Exposure Analysis- Revenue Integrity & Transaction Decisioning Audit**
 This project evaluates transaction data to understand whether reported growth is reliable and whether fraud is affecting revenue integrity. It focuses on identifying risk patterns across users, time cohorts, and transaction segments.
 
 The analysis is designed for a Payments / Monetization Operations context, where both growth quality and fraud exposure matter.
