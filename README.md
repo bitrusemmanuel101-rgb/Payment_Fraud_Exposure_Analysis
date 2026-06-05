@@ -11,7 +11,7 @@ As transaction volumes scale, leadership needs confidence that reported growth r
 
 This analysis was initiated in response to a set of executive concerns around growth quality and risk exposure across the payment system. The goal was to move beyond surface-level reporting and assess whether growth signals are trustworthy, whether fraud is materially present within operational flows, and how risk is distributed across different user segments and acquisition cohorts.
 
-## The Businness Questions:
+## The Business Questions:
 
 1. Can we trust our growth?
 2. Are newer cohorts becoming riskier?
@@ -123,12 +123,12 @@ from
 #### A significant portion of reported payment volume is not safely monetizable.
 We cannot measure our growth to be equal to our revenue.
 
-For a finTech Industry, although there isn't a written law, the red zone of fraud rates are anything greater than 1%. and we are experiencing a 32.2% fraud rate. This should be prioritized as CRITICAL.
+For a FinTech Industry, although there isn't a written law, the red zone of fraud rates are anything greater than 1%. and we are experiencing a 32.2% fraud rate. This should be prioritized as CRITICAL.
 
 ---
 ## **Question 2: Are newer cohorts becoming riskier?**
 
-This question delves into the first transaction of every user ffom the sstart of the year till the end, for the purpose of tracking fradulent activities from each ,month to know if fraudulent activities are increasing with new aqcuisition of users.
+This question delves into the first transaction of every user from the start of the year till the end, for the purpose of tracking fraudulent activities from each month to know if fraudulent activities are increasing with new acquisition of users.
 
 ```sql
 
@@ -175,7 +175,7 @@ group by
 
 
 
-*Fraud Detection Cohort Analysis Report, Showing the Progressive Rates of Fraud Accross Cohort Lifecycle*
+*Fraud Detection Cohort Analysis Report, Showing the Progressive Rates of Fraud Across Cohort Lifecycle*
 
 #### **User Acquisition Quality Over Time**
 
@@ -231,7 +231,6 @@ order BY
 
 
 
-*A Funnel Showing The Fraud Percent By Merchants*
 - Electronics → ~32.7% fraud
 - Travel → ~32.5% fraud
 - Groceries → ~32.4% fraud
@@ -275,7 +274,6 @@ order BY
 
 
 
-*A Treemap Showing Fraud Rate in Each Location*
 - Tokyo → ~33.0%
 - London → ~ 32.5%
 - New York → ~ 32.5%
@@ -290,7 +288,7 @@ Fraud exposure was consistent across both merchant categories and geographies, i
 ---
 #### Analysis Into System_level Controls
 
-### **3. Fraud level in Authenticaion Methods**\
+### **3. Fraud level in Authentication Methods**
 
 ```sql
 with Fraud_t as(
@@ -316,7 +314,6 @@ order BY
 ``` 
 
 
-*Bar Chart Showing Fraud Rate By Authentication Methods*
 - Biometric → 32.6%
 - OTP → 32.5%
 - Password → 32.4%
@@ -370,13 +367,11 @@ order BY
 ```
 
 
-
-*Pie Chart Showing Fraud Rate by Devioce Types*
 - Mobile → 32.6% fraud
 - Tablet → 32.2% fraud
 - Laptop → 31.7% fraud
 
-Accross all devices, fraudulent activities seem to be on a high scale. The range being around 30% allthrough shows that it is not a question of which device is more fraud prone.  
+Across all devices, fraudulent activities seem to be on a high scale. The range being around 30% allthrough shows that it is not a question of which device is more fraud prone.  
 
 This also cancels out the device types as the culprit to fraudulent activities. since they isn't any vertical scale.
 
@@ -409,14 +404,12 @@ order BY
 
 
 
-*Donut Chart SHopwing Fraud Rate By Card Types*
-
 - Discover → 32.6% fraud
 - Amex → 32.4% fraud
 - Mastercard → 32.0% fraud
 - Visa → 31.7% fraud
 
-The same patterns continue accross segments, fraudulent activities cut accross all parties in each segments, and having same range of fraudulent activities. 
+The same patterns continue across segments, fraudulent activities cut across all parties in each segments, and having same range of fraudulent activities. 
 
 this is tailing towards the Risk Score engine.
 
